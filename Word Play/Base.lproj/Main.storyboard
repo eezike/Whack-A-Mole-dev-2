@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1x-n5-2k8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Whack-A-Mole-->
+        <scene sceneID="gcr-Kh-j88">
+            <objects>
+                <viewController id="NCA-GR-88j" customClass="SecondViewController" customModule="Word_Play" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZYo-ro-938">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="2Mw-sz-nYh">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzY-Ig-gNT">
+                                <rect key="frame" x="41" y="107" width="89" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mole"/>
+                                <connections>
+                                    <action selector="m0Tap:" destination="NCA-GR-88j" eventType="touchUpInside" id="GFI-bg-7gY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7E0-Xr-zmg">
+                                <rect key="frame" x="41" y="276" width="89" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mole"/>
+                                <connections>
+                                    <action selector="m1Tap:" destination="NCA-GR-88j" eventType="touchUpInside" id="GI9-01-6o4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zy-Gy-NMo">
+                                <rect key="frame" x="41" y="464" width="89" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mole"/>
+                                <connections>
+                                    <action selector="m2Tap:" destination="NCA-GR-88j" eventType="touchUpInside" id="s0c-WN-JIi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqQ-r8-QT9">
+                                <rect key="frame" x="248" y="464" width="89" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mole"/>
+                                <connections>
+                                    <action selector="m5Tap:" destination="NCA-GR-88j" eventType="touchUpInside" id="q6e-4Y-Edh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV3-PS-rMl">
+                                <rect key="frame" x="248" y="277" width="89" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mole"/>
+                                <connections>
+                                    <action selector="m4Tap:" destination="NCA-GR-88j" eventType="touchUpInside" id="pVv-Ym-gj0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzu-Qb-A9U">
+                                <rect key="frame" x="154" y="602" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.98294656189999996" blue="0.5571446645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="START"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="NCA-GR-88j" eventType="touchUpInside" id="56R-Wj-E6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZd-4r-ZfE">
+                                <rect key="frame" x="248" y="107" width="89" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mole"/>
+                                <connections>
+                                    <action selector="m3Tap:" destination="NCA-GR-88j" eventType="touchUpInside" id="Sbb-2M-wzD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxI-N5-7YY">
+                                <rect key="frame" x="154" y="607" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6072593661796476" green="0.94178871702212485" blue="0.96597716968911918" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="85i-iM-Js1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Whack-A-Mole" id="1Un-WC-WCU"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="2Mw-sz-nYh" id="cO2-TW-kIV"/>
+                        <outlet property="moleButton0" destination="WzY-Ig-gNT" id="9k6-v1-C5u"/>
+                        <outlet property="moleButton1" destination="7E0-Xr-zmg" id="7XE-VP-gRP"/>
+                        <outlet property="moleButton2" destination="0Zy-Gy-NMo" id="hpm-cT-65O"/>
+                        <outlet property="moleButton3" destination="jZd-4r-ZfE" id="pLr-vN-1Fw"/>
+                        <outlet property="moleButton4" destination="XV3-PS-rMl" id="JAJ-Cg-1zM"/>
+                        <outlet property="moleButton5" destination="oqQ-r8-QT9" id="VDn-io-7f9"/>
+                        <outlet property="startButton" destination="uzu-Qb-A9U" id="Fzb-Qf-fYO"/>
+                        <outlet property="timeLabel" destination="UxI-N5-7YY" id="1Vy-C6-eFC"/>
+                        <segue destination="Fca-ak-BlH" kind="show" identifier="secondToThirdSegue" id="fMD-h5-maM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQq-9G-bDB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660" y="31.934032983508249"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="uf7-iG-jOc">
+            <objects>
+                <viewController id="Fca-ak-BlH" customClass="ThirdViewController" customModule="Word_Play" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QE6-hw-31o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4s-CX-b0j">
+                                <rect key="frame" x="38" y="173" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES" allowsDirectInteraction="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="D7u-4s-SF9"/>
+                                    <constraint firstAttribute="height" constant="300" id="nlc-2C-mHp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98419360672732792" green="0.6315056648155859" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="s4s-CX-b0j" firstAttribute="top" secondItem="ldy-ec-cLu" secondAttribute="top" constant="109" id="2Nz-Dh-6WT"/>
+                            <constraint firstItem="s4s-CX-b0j" firstAttribute="centerX" secondItem="QE6-hw-31o" secondAttribute="centerX" id="DQq-Az-q7b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ldy-ec-cLu"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="s4s-CX-b0j" id="54H-QV-zyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zk-UA-bG7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3463.1999999999998" y="31.934032983508249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AVw-9d-jjm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T1x-n5-2k8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GbP-h5-XUz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NCA-GR-88j" kind="relationship" relationship="rootViewController" id="TCD-gW-BI9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryB-Nf-hOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720.8" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="grass" width="1600" height="1600"/>
+        <image name="mole" width="454" height="620"/>
+    </resources>
+</document>
